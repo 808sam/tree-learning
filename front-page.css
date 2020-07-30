@@ -16,6 +16,7 @@ nav{
 nav ul{
     list-style-type:disc;
     font-size: 1.3em;
+    margin-left:5%;
 }
 nav a{
     text-decoration:none;
@@ -44,6 +45,7 @@ a:hover, a:active{
     }
     nav ul{
         font-size: 1em;
+        margin:0%;
     }
     summary{
         font-size: 1.3em;
