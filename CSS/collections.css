@@ -1,40 +1,50 @@
 body {
     background-color: #f3f1f1;
-    width: 100%;
-    font-size: 100%;
 }
-h2{
+div
+{
+    display: block;
+}
+h1{
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
     padding: 3% 0%;
-}
-p>a{
-    margin: 0em 1em;
 }
 nav {
     text-align: center;
     display:block;
+    margin: 1%;
+    padding-bottom: 3%;
+    border-bottom: double black
 }
-
 nav a {
     width: 30%;
     text-decoration: none;
-    padding: 1em;
     font-size: 1.5em;
+    padding: 0% 1%;
+}
+section{
+    padding: 2%;
+    border-bottom: solid 1px;
+}
+h2 {
+    font-size: 1.5em;
+    margin: 2% 5% 3%;
+}
+section p {
+    padding: 3%;
+}
+p>a{
+    margin: 0% 3%;
 }
 
-h3 {
-    font-size: 2em;
-    margin: 0em .5em;
-}
-
-iframe {
+iframe, video {
     width: 40%;
     margin: 0% 3%;
 }
 
-.listskills a {
-    font-size: 1.5em;
+.skill {
+    font-size: 1.3em;
     text-decoration: none;
     background-color: #0039a0;
     color: #fefff2;
@@ -43,32 +53,31 @@ iframe {
     margin: .2em .5em;
     display: inline-block;
 }
+footer{
+    width: 95%;
+    text-align:center;
+    margin-bottom: 3%;
+}
+footer span {
+    font-size:1em;
+    width: 45%;
+    display:inline-block;
+    padding-top:3%;
+}
 a[href="#header"] {
-    margin: 1em 0em;
-    font-size: 2em;
-    display: inline-block;
+    float: right;
 }
 a:hover, a:active {
-    color: #FF0000;
+    color: #ff0000;
     cursor:pointer;
 }
-.listskills a:hover, a:active {
+.skill:hover, .skill:active{
     background-color: #ff0000;
     color: #fefff2;
 }
-span {
-    margin: 1em;
-    font-size:1em;
-    width: 30%;
-    display:inline;
-}
 
 @media screen and (min-width: 450px){
-    body {
-        font-size: 100%;
-    }
-
-    h2 {
+    h1 {
         font-size: 3em;
         padding: 1% 0%;
     }
@@ -81,22 +90,26 @@ span {
         font-size: 1.5em;
     }
 
-    h3 {
+    h2 {
         font-size: 1.5em;
-        margin: 0em .5em;
+        margin: 0% 3% 3%;
     }
-
-    iframe {
-        width: 25%;
+}
+@media screen and (min-width: 800px){
+    video, iframe{
+        width: 27%;
     }
-
-    .listskills a {
-        font-size: 1em;
+    footer{
+        text-align:left;
     }
-
-    a[href="#header"] {
-        float: right;
-        margin: 1em 1em;
-        font-size: 1em;
+    footer span {
+        width:40%;
+        text-align: left;
+        margin:0% 3%;
+        text-align:inline-block;
+    }
+    footer span:last-of-type{
+        float:right;
+        text-align:right;
     }
 }
